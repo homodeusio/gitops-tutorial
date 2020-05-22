@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: podinfo
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -12,6 +12,6 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: quay.io/stefanprodan/podinfo:3.0.0
+        image: 712451532463.dkr.ecr.us-east-1.amazonaws.com/capsid_be:master
         ports:
-        - containerPort: 3000
+        - containerPort: 5000
